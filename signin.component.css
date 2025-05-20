@@ -1,0 +1,86 @@
+body {
+    background-image: url('../../assets/images/teammates_images/Templatebg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height:100vh; 
+}
+
+.form {
+    margin-left: 150px;
+    margin-top: 200px;
+    background-color: rgb(184, 225, 232);
+}
+
+.courses {
+    margin-left: 150px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a6d3d4;
+}
+
+h1 {
+    text-align: center;
+    color: #1c3947;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e7a90a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.Create {
+    text-align: center;
+}
+
+.Redirect {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

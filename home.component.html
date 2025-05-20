@@ -1,0 +1,222 @@
+
+<body>
+    <nav>
+        <div class="container nav__container">
+          <!-- Logo -->
+          <a routerLink="/" class="logo">
+            <h1>BrightSpark</h1>
+          </a>
+  
+          <form role="search">
+            <input
+              type="search"
+              placeholder="Search the site..."
+              aria-label="Search through site content"
+            />
+            <button [class]="btncls">Search</button>
+          </form>
+
+          <ul class="nav__menu">
+            <li>
+              <a routerLink="/">Home</a>
+            </li>
+            <li>
+              <a routerLink="/about">About</a>
+            </li>
+            <li>
+              <a routerLink="/courses">Courses</a>
+            </li>
+            <li>
+              <a routerLink="/contact">Contact</a>
+            </li>
+            <li>
+              <a routerLink="/signin">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Header Section
+    ========================================-->
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Grow your Skills to advance your career path</h1>
+                <p>Explore boundless opportunities for professional growth at BrightSpark Academy as you enroll in our online courses, designed to empower you with the expertise needed to navigate and excel in your chosen career path.</p>
+                <a routerLink="/courses" [class]="btncls">
+                    Get Started
+                </a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="../../assets/images/undraw_pair_programming_re_or4x.svg" alt="illustration" width="500" height="500">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Categories Section
+    ======================================= -->
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                    Embark on a personalized learning journey with our website, offering specialized categories in Development, Business, Photography, and Design. Choose your expertise level - Beginner, Intermediate, Upper Intermediate, or Advanced - and access curated courses tailored to your proficiency, ensuring a transformative educational experience at every step.
+                </p>
+                <a href="#" [class]="btncls">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="../../assets/images/blockchain.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Blockchain</h5>
+                    <p>Delve into the future of decentralized systems with our blockchain course, covering fundamentals and real-world applications.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="../../assets/images/graphic-design.png" alt=" Icon" class="category__btn" >
+                    </span>
+                    <h5>Graphic Design</h5>
+                    <p>Craft compelling designs and master visual communication tools in our Graphic Design course.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="../../assets/images/finance.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Finance</h5>
+                    <p>Navigate financial landscapes with courses in financial analysis, investment strategies, and effective decision-making.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <img src="../../assets/images/social-marketing.png" alt="Icon" class="category__btn" >
+                    </span>
+                    <h5>Marketing</h5>
+                    <p>"Boost your marketing prowess with courses covering digital strategies, market research, and brand development.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Courses Section
+    ========================================-->
+    <section class="courses">
+        <h1>Our Popular Courses</h1>
+        <div class="container courses__container">
+            
+            <article class="course">
+                <div class="image">
+                    <img src="../../assets/images/blockchain-course.jpg" width="400" height="400">
+                </div>
+                <div class="courses__info">
+                    <h4>Blockchain and Bitcoin Fundamentals</h4>
+                <p>Learn the key elements of blockchain and Bitcoin in this bestselling video course and accompanying PDF glossary.</p>
+                </div>
+
+                <div class="button">
+                    <a routerLink="/courses" [class]="btncls">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="image">
+                    <img src="../../assets/images/Cover_graphic-design.jpg" width="500" height="500">
+                </div>
+                <div class="courses__info">
+                    <h4>Graphic Design Masterclass - Learn GREAT Design</h4>
+                <p>The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign,Design Theory, Branding and Logo Design</p>
+                </div>
+                <div class="button">
+                    <a routerLink="/courses" [class]="btncls">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="image">
+                    <img src="../../assets/images/Cover__BusinessB.jpg" width="500" height="500">
+                </div>
+                <div class="courses__info">
+                    <h4>Digital Marketing: The Ultimate Guide to Strategic Marketing</h4>
+                <p class="courses_p_info">Master Digital Marketing: Instagram, Optimization, Social Media, Analytics, SEO, PPC, Email, WebCopy, UX, Content Mkt</p>
+                </div>
+                <div class="button">
+                    <a routerLink="/courses" [class]="btncls">Learn More</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions
+    ========================================-->
+    <section class="courses" style="justify-content: center; align-items:center; text-align:center">
+        <h1>Frequently Asked Questions</h1>
+        <a routerLink="/" [class]="btncls">
+            Explore FAQs: Answers to Your Common Queries
+        </a>
+    </section>
+    
+
+    <script src="./javascript/script.js"></script>
+
+    <footer>
+        <div class="container footer__container">
+          <div class="footer__col">
+            <h3>Community</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#">Learners</a>
+              </li>
+  
+              <li class="footer__list-item">
+                <a routerLink="/">Partners</a>
+              </li>
+  
+              <li class="footer__list-item">
+                <a routerLink="/">Developers</a>
+              </li>
+  
+              <li class="footer__list-item">
+                <a routerLink="/"> Teaching Center</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__col">
+            <h3>Privacy</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a routerLink="/">Privacy Policy</a>
+              </li>
+  
+              <li class="footer__list-item">
+                <a routerLink="/"> Terms and Conditions.</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__col footer__col-last">
+            <h3>Download App</h3>
+            <a routerLink="/"
+              ><img src="../../assets/images/App_Store_(iOS)-Badge-Logo.wine.png" alt=""
+            /></a>
+            <a href="#"><img src="../assets/images/google-play-badge.png" alt="" /></a>
+            <img
+              class="certified-badge"
+              src="../../assets/images/Certified_Badge.png"
+              alt=""
+            />
+          </div>
+        </div>
+        
+        <div class="container copywright__container">
+           <small> © 2023 BrightSpark Inc. All rights reserved.</small> 
+        </div>
+      </footer>
+</body>

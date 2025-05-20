@@ -1,0 +1,90 @@
+body {
+    background-image: url('../../assets/images/teammates_images/Templatebg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height:150vh; 
+}
+.heading{
+    margin-top:200px;
+    width:300px;
+    font-family:'Times New Roman', Times, serif;
+    color:#026f72;
+}
+.signup{
+    margin-right: 900px;
+    background-color: rgb(184, 225, 232);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+    color: #1c3947;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e7a90a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #e7a90a;
+}
+
+button:hover {
+    background-color: #6dc3d6;
+}
+
+footer {
+    text-align: center;
+}
+
+.Redirect {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

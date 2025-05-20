@@ -1,0 +1,144 @@
+<body>
+    <!-- NAVBAR SECTION 
+    =========================================-->
+    <nav>
+      <div class="container nav__container">
+        <!-- Logo -->
+        <a routerLink="/" class="logo">
+          <h1>BrightSpark</h1>
+        </a>
+
+        <form role="search">
+          <input
+            type="search"
+            placeholder="Search the site..."
+            aria-label="Search through site content"
+          />
+          <button class="btn">Search</button>
+        </form>
+
+        <ul class="nav__menu">
+          <li>
+            <a routerLink="/home">Home</a>
+          </li>
+          <li>
+            <a routerLink="/about">About</a>
+          </li>
+          <li>
+            <a routerLink="/courses">Courses</a>
+          </li>
+          <li>
+            <a routerLink="/contact">Contact</a>
+          </li>
+          <li>
+            <a routerLink="/signin">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Contact Section-->
+    <section class="contact">
+        <div class="container contact__container">
+
+            <aside class="contact__aside">
+                <div class="aside__image">
+                    <img src="../../assets/images/undraw_contact.svg" alt="">
+                </div>
+
+                <h1>Contact Us</h1>
+
+                <p>
+                We value your feedback, inquiries, and suggestions. Our dedicated team is here to assist you in any way we can. Whether you have questions about our  services, need assistance , or simply want to share your thoughts with us, we welcome your communication.
+                </p>
+
+                <ul class="contact__details">
+                    <li>
+                        <i class='bx bxs-phone-call' ></i>
+                        <h5>(91)6305828566</h5>
+                    </li>
+                    <li>
+                        <i class='bx bx-envelope' ></i>
+                        <h5>brightspark123&#64;gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class='bx bxs-map'></i>
+                        <h5>vellore,TN</h5>
+                    </li>
+                </ul>
+            </aside>
+
+            <form class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="first name" placeholder="First Name" required>
+                    <input type="text" name="last name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email address" placeholder="Your Email Address" required>
+                <textarea name="message" placeholder="Write Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    Send
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+
+   <!-- FOOTER SECTION
+    ======================================== -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__col">
+          <h3>Community</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#">Learners</a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="#">Partners</a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="#">Developers</a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="#"> Teaching Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Privacy</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="./privacy_policy.html">Privacy Policy</a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="./terms_and_conditions.html"> Terms and Conditions.</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_col footer_col-last">
+          <h3>Download App</h3>
+          <a href="#"
+            ><img src="../../assets/images/App_Store_(iOS)-Badge-Logo.wine.png" alt=""
+          /></a>
+          <a href="#"><img src="../../assets/images/google-play-badge.png" alt="" /></a>
+          <img
+            class="certified-badge"
+            src="../../assets/images/Certified_Badge.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="container copywright__container">
+         <small> © 2023 BrightSpark Inc. All rights reserved.</small> 
+      </div>
+    </footer>
+
+</body>

@@ -1,0 +1,706 @@
+/* removing default styling*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+/*  Custom Styles --- MOBILE FIRST STYLING
+============================================ */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    color: #fff;
+    background: rgb(184, 225, 232);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+section h1 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* Scrollbar
+======================================== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #abe7e0;
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1c3947;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fbc230;
+}
+
+a {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(0deg, rgba(205, 168, 29, 1) 0%, rgba(255, 204, 82, 1) 100%);
+    color: #17222e;
+}
+
+.btn:hover {
+    background: #17222e;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Navbar
+========================================================================================= */
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    /* This line makes the navbar fixed */
+    z-index: 11;
+    transition: 0.3s;
+    top: 0;
+    /* Fixed position from the top */
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__container a {
+    min-width: 20%;
+}
+
+.nav__container a h1 {
+    text-align: start;
+    color: #17222e;
+}
+
+.nav__container form {
+    min-width: 45%;
+    width: 100%;
+    display: flex;
+    padding: 12px 1rem 8px;
+    align-items: center;
+    justify-content: start;
+}
+
+.nav__container form input {
+    padding: 0.8rem;
+    border-radius: 20px 0 0 20px;
+    min-width: 60%;
+}
+
+.nav__container form button {
+    padding: 0.7rem;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #17222e;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    min-width: 35%;
+}
+
+.nav__menu li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c3947;
+}
+
+.nav__menu a:hover {
+    color: #fff;
+}
+
+
+
+/* 
+
+*/
+/* Header
+  ===================================================================================== */
+
+header {
+    position: relative;
+    top: 120px;
+    overflow: hidden;
+    max-height: 100vh;
+    height: fit-content;
+    margin: 0 auto 15%;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.header__left {
+    padding: 2rem 0;
+    color: #1c3947;
+}
+
+.header__left h1,
+.header__left p {
+    width: 100%;
+    height: fit-content;
+    text-align: start;
+}
+
+.header__left h3 {
+    font-size: 2rem;
+}
+
+.header__left p {
+    margin: 2rem auto;
+    font-size: 1.2rem;
+}
+
+.header_right .header_right-image {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* 
+
+*/
+/* CATEGORIES SECTION
+  ===================================================================================== */
+
+.categories {
+    height: fit-content;
+    background: #3e7e81;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-top: 0;
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.categories__left h1 {
+    text-align: start;
+}
+
+.categories__left p {
+    margin: 1rem 3rem 3rem 0;
+    font-size: 1.2rem;
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c3947;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.category__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+    width: fit-content;
+}
+
+.category h5 {
+    margin: 1rem 0 0.7rem;
+    font-size: 1rem;
+    color: #fbc230;
+}
+
+.category p {
+    font-size: 0.95rem;
+}
+
+/* 
+
+
+*/
+
+/* Courses Section
+=========================================== */
+.courses {
+    height: fit-content;
+}
+
+.courses h1 {
+    color: #17222e;
+    margin: 0 auto 5rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 100%;
+}
+
+.course {
+    position: relative;
+    background: #e4e4e4;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    text-align: start;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+    display: grid;
+    gap: 0;
+    grid-template-rows: 40% 40% 20%;
+}
+
+.course h4 {
+    color: #17222e;
+    line-height: 1.5;
+}
+
+.course .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2rem;
+}
+
+.courses__info {
+    padding: 2rem;
+}
+
+.courses__info p {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #1c3947;
+}
+
+.course .image img {
+    height: 100%;
+    width: auto;
+}
+
+/* Footer Section
+============================================ */
+footer {
+    background: #1c3947;
+    padding: 5rem 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__col>h3 {
+    font-weight: normal;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 2px solid #f4a261;
+}
+
+.footer__list>li {
+    margin: 0 auto 0.5rem;
+    padding: 0;
+}
+
+.footer__list li a {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__col-last a img {
+    width: 150px;
+    max-width: 100%;
+    max-height: 45px;
+}
+
+.footer__col-last .certified-badge {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.copywright__container {
+    border-top: 2px solid #f4a261;
+    margin: 4rem auto 0;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-icons a i {
+    font-size: 36px;
+    margin: 0 1rem;
+}
+
+.courses {
+    padding: 10rem 0 8rem !important;
+}
+
+.courses__container-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.8rem;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.course__card {
+    background: #333;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    height: 100%;
+    padding: 0 0 1rem 0;
+    display: grid;
+    gap: 0;
+    grid-template-rows: 45% 40% 15%;
+}
+
+.course__card .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.course__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.course__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 0 0.5rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating .rating-number {
+    padding: 0 0.5rem 0 0;
+}
+
+.rating .rating-count {
+    padding: 0 0 0 0.5rem;
+    font-weight: normal;
+}
+
+.rating h5 {
+    color: #f0f0f0;
+}
+
+.rating i {
+    color: #ffaa00;
+}
+
+.button {
+    margin: 0 0 0 1rem;
+}
+
+.title {
+    color: #333;
+}
+
+.price {
+    width: fit-content;
+    padding: 0.5rem 0.8rem;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.price h5 {
+    color:#1c3947;
+}
+
+.price_free {
+    padding: 0.5rem 0.8rem;
+    background: #28a745;
+    border-radius: 20px;
+    animation: oscillation 0.5s linear infinite alternate;
+}
+
+.price_free h5 {
+    color: #fff;
+}
+
+@keyframes oscillation {
+    0% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.subtitle {
+    color: #555;
+}
+
+/* FILTER TAB */
+.courses__nav {
+    position: unset;
+    z-index: unset;
+    height: unset;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.filter__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto 5rem;
+    width: 600px;
+    height: fit-content;
+    text-align: center;
+}
+
+/* Filter Tab */
+.filter__tab {
+    width: 25%;
+    padding: 0.5rem 0;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #888;
+    border-bottom: none;
+}
+
+.filter__tab span {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.filter__tab span i {
+    font-size: 36px;
+}
+
+.filter__tab .filter__icon-sm {
+    display: none;
+}
+
+/* Filter menu */
+.filter__menu {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background: #f8f9fa;
+    border: 1px solid #888;
+}
+
+.filter__menu span h4 {
+    color: #333;
+    background: #28a745;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__menu-select {
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter__menu-select:hover {
+    background: #f0f0f0;
+}
+
+.filter__menu-select h5 {
+    color: #555;
+    font-weight: normal;
+}
+
+.filter__menu-select i {
+    font-size: 24px;
+    color: #f0f0f0;
+}
+
+.filter__menu-options {
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    margin-top: 0.2rem;
+    transition: all 0.3s ease;
+    display: none;
+    min-width: fit-content;
+}
+
+.filter__menu-options.checked {
+    display: block;
+}
+
+.filter__menu-options li {
+    transition: all 0.3s ease;
+}
+
+.filter__menu-options li h5 {
+    cursor: pointer;
+    margin: 1rem 0;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.filter__menu-options li:hover {
+    background: #fff;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+
+.filter__menu-options li:hover h5 {
+    color: #f0f0f0;
+    overflow: hidden;
+}
+
+.filter__menu-options li.selected {
+    background: #fff;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+
+.filter__menu-options li.selected h5 {
+    color: #f0f0f0;
+}
+
+.filter__menu span h4 {
+    text-align: center;
+}
